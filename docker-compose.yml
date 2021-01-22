@@ -1,0 +1,29 @@
+version: '2.2'
+services:
+  es-romain:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    container_name: es-romain
+    environment:
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - cluster.name=docker-cluster
+      - network.host=0.0.0.0
+      - discovery.type=single-node 
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - data01-romain:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - elastic
+
+volumes:
+  data01-romain:
+    driver: local
+
+networks:
+  elastic:
+    driver: bridge
