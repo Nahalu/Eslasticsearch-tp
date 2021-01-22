@@ -1,20 +1,19 @@
-Requirements:
+## Requirements:
 
 - Docker   
 - Docker-compose   
 - Nodejs   
 - Postman  
 
-Launch:  
+## Launch:  
 
-cd into project  
+```cd into project```
 
-docker-compose up  
+```docker-compose up```
 
-npm i  
-npm run start:dev  
+```npm i``` 
+```npm run start:dev```  
 
-Launch runner postman  
+**Launch runner postman**  
 
-
-Les requêtes ES sont contenus dans le persons.service.ts  
+Les requêtes ES sont contenus dans le fichier persons.service.ts  
