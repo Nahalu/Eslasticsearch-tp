@@ -1,7 +1,5 @@
 import { HttpException, Injectable } from '@nestjs/common';
 import * as elasticsearch from 'elasticsearch';
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-// const bodybuilder = require('bodybuilder');
 
 const index = 'person';
 
@@ -36,8 +34,7 @@ export class PersonsService {
         },
       },
     });
-
-    return response;
+    return response.hits.total.value;
   }
 
   // Combien de personnes ont un age supérieur à 20 ans ?
@@ -55,7 +52,7 @@ export class PersonsService {
       },
     });
 
-    return response;
+    return toRessources(response);
   }
 
   // Combien d’hommes ont un age supérieur à 20 ans ?
@@ -84,7 +81,7 @@ export class PersonsService {
       },
     });
 
-    return response;
+    return toRessources(response);
   }
 
   // Retournez toutes les persnnes qui ont un age supérieur à 20 ans, et dont la balance est comprise entre $1000 et $2000.
@@ -116,7 +113,7 @@ export class PersonsService {
       },
     });
 
-    return response;
+    return toRessources(response);
   }
 
   // Trouvez toutes les personnes qui sont situées à moins de 10km de Paris.
@@ -143,7 +140,7 @@ export class PersonsService {
       },
     });
 
-    return response;
+    return toRessources(response);
   }
 
   // Calculer l’age moyen des personnes indexées
@@ -157,7 +154,7 @@ export class PersonsService {
       },
     });
 
-    return response;
+    return Math.trunc(response.aggregations.avg_age.value);
   }
 
   // Calculer le nombre de personnes par genre
@@ -175,7 +172,7 @@ export class PersonsService {
       },
     });
 
-    return response;
+    return response.aggregations.genres.buckets;
   }
 
   // Calculer le nombre de personnes par genre et par couleur des yeux
@@ -200,7 +197,7 @@ export class PersonsService {
       },
     });
 
-    return response;
+    return response.aggregations.genres.buckets;
   }
 
   // Calculer le nombre de personnes par genre et par année d’enregistrement (propriété registered)
@@ -226,6 +223,21 @@ export class PersonsService {
       },
     });
 
-    return response;
+    return response.aggregations.genres.buckets;
   }
+}
+
+const toRessources = ressource => {
+  return ressource.hits.hits.map(({ _source }) => {
+    return toRessource(_source);
+  });
+};
+
+function toRessource(ressourceSource) {
+  const { id, ...rest } = ressourceSource;
+  const ressourceAbstract = { id, ...rest };
+
+  console.log(ressourceAbstract);
+
+  return ressourceAbstract;
 }

@@ -1,0 +1,1060 @@
+{
+	"info": {
+		"_postman_id": "e522294d-6b35-4c4f-8087-6647ecb0a8c6",
+		"name": "TP1 - TP2 - TP3 - Projet - NoSQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Indexes",
+			"item": [
+				{
+					"name": "person-v1",
+					"item": [
+						{
+							"name": "Create index person-v1",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:9200/person-v1",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"person-v1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create schema index person-v1",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dynamic\": false,\r\n    \"properties\": {\r\n        \"id\": {\r\n            \"type\": \"text\",\r\n            \"index\": false\r\n        },\r\n        \"index\": {\r\n            \"type\": \"text\",\r\n            \"index\": false\r\n        },\r\n        \"guid\": {\r\n            \"type\": \"text\",\r\n            \"index\": false\r\n        },\r\n        \"picture\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"eyeColor\": {\r\n            \"type\": \"keyword\"\r\n        },\r\n        \"name\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"gender\": {\r\n            \"type\": \"keyword\"\r\n        },\r\n        \"company\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"phone\": {\r\n            \"type\": \"keyword\"\r\n        },\r\n        \"address\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"about\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"registered\": {\r\n            \"type\": \"date\"\r\n        },\r\n        \"location\": {\r\n            \"type\": \"geo_point\"\r\n        },\r\n        \"age\": {\r\n            \"type\": \"integer\"\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:9200/person-v1/_mapping",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"person-v1",
+										"_mapping"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete index person-v1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:9200/person-v1",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"person-v1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "person-v2",
+					"item": [
+						{
+							"name": "Create index person-v2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:9200/person-v2",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"person-v2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create schema index person-v2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dynamic\": false,\r\n    \"properties\": {\r\n        \"id\": {\r\n            \"type\": \"text\",\r\n            \"index\": false\r\n        },\r\n        \"index\": {\r\n            \"type\": \"text\",\r\n            \"index\": false\r\n        },\r\n        \"guid\": {\r\n            \"type\": \"text\",\r\n            \"index\": false\r\n        },\r\n        \"picture\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"eyeColor\": {\r\n            \"type\": \"keyword\"\r\n        },\r\n        \"name\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"gender\": {\r\n            \"type\": \"keyword\"\r\n        },\r\n        \"company\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"phone\": {\r\n            \"type\": \"keyword\"\r\n        },\r\n        \"address\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"about\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"registered\": {\r\n            \"type\": \"date\"\r\n        },\r\n        \"location\": {\r\n            \"type\": \"geo_point\"\r\n        },\r\n        \"age\": {\r\n            \"type\": \"integer\"\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:9200/person-v2/_mapping",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"person-v2",
+										"_mapping"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete index person-v2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:9200/person-v2",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"person-v2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "person-v3",
+					"item": [
+						{
+							"name": "Create index person-v3",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:9200/person-v3",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"person-v3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create schema index person-v3",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dynamic\": false,\r\n    \"properties\": {\r\n        \"id\": {\r\n            \"type\": \"text\",\r\n            \"index\": false\r\n        },\r\n        \"index\": {\r\n            \"type\": \"text\",\r\n            \"index\": false\r\n        },\r\n        \"guid\": {\r\n            \"type\": \"text\",\r\n            \"index\": false\r\n        },\r\n        \"picture\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"eyeColor\": {\r\n            \"type\": \"keyword\"\r\n        },\r\n        \"name\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"gender\": {\r\n            \"type\": \"keyword\"\r\n        },\r\n        \"company\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"phone\": {\r\n            \"type\": \"keyword\"\r\n        },\r\n        \"address\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"about\": {\r\n            \"type\": \"text\"\r\n        },\r\n        \"registered\": {\r\n            \"type\": \"date\"\r\n        },\r\n        \"location\": {\r\n            \"type\": \"geo_point\"\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:9200/person-v3/_mapping",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"person-v3",
+										"_mapping"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete index person-v3",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:9200/person-v3",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"person-v3"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aliases",
+			"item": [
+				{
+					"name": "person-v1",
+					"item": [
+						{
+							"name": "Create alias person",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"actions\": [\r\n        {\r\n            \"add\": {\r\n                \"index\": \"person-v1\",\r\n                \"alias\": \"person\"\r\n            }\r\n        },\r\n        {\r\n            \"add\": {\r\n                \"index\": \"person-v2\",\r\n                \"alias\": \"person\"\r\n            }\r\n        },\r\n        {\r\n            \"add\": {\r\n                \"index\": \"person-v3\",\r\n                \"alias\": \"person\"\r\n            }\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:9200/_aliases",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"_aliases"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "person-v2",
+					"item": [
+						{
+							"name": "Create alias person",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"actions\": [\r\n        {\r\n            \"add\": {\r\n                \"index\": \"person-v2\",\r\n                \"alias\": \"person\"\r\n            }\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:9200/_aliases",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"_aliases"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "person-v3",
+					"item": [
+						{
+							"name": "Create alias person",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"actions\": [\r\n        {\r\n            \"add\": {\r\n                \"index\": \"person-v3\",\r\n                \"alias\": \"person\"\r\n            }\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:9200/_aliases",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"_aliases"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create All alias person",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"actions\": [\r\n        {\r\n            \"add\": {\r\n                \"index\": \"person-v1\",\r\n                \"alias\": \"person\"\r\n            }\r\n        },\r\n        {\r\n            \"add\": {\r\n                \"index\": \"person-v2\",\r\n                \"alias\": \"person\"\r\n            }\r\n        },\r\n        {\r\n            \"add\": {\r\n                \"index\": \"person-v3\",\r\n                \"alias\": \"person\"\r\n            }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/_aliases",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"_aliases"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List aliases",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/_alias",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"_alias"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Documents",
+			"item": [
+				{
+					"name": "Insert person-v1 document",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"5fc7705cd6121f446c793576\",\r\n    \"index\": 0,\r\n    \"guid\": \"a9002946-425b-404b-9a4a-661f083f65c2\",\r\n    \"isActive\": false,\r\n    \"balance\": \"$2,173.87\",\r\n    \"picture\": \"http://placehold.it/32x32\",\r\n    \"age\": 28,\r\n    \"eyeColor\": \"green\",\r\n    \"name\": \"Lilian Roach\",\r\n    \"gender\": \"female\",\r\n    \"company\": \"HALAP\",\r\n    \"email\": \"lilianroach@halap.com\",\r\n    \"phone\": \"+1 (904) 472-2572\",\r\n    \"address\": \"732 Battery Avenue, Abiquiu, Hawaii, 2025\",\r\n    \"about\": \"Pariatur irure aute voluptate duis nulla amet ipsum ea. Est ullamco cillum minim sunt aliqua aute aute Lorem sint. Culpa esse ea proident aliqua. Id sit cillum amet sunt ad laborum pariatur consectetur sit ut nostrud aliqua nostrud. Eu adipisicing veniam enim minim laboris. Ut eu commodo nulla excepteur reprehenderit laborum eiusmod. Dolore velit consequat cupidatat ut eiusmod.\\r\\n\",\r\n    \"registered\": \"2018-01-26\",\r\n    \"location\": {\r\n        \"lat\": 71.815252,\r\n        \"lon\": 73.448804\r\n    },\r\n    \"tags\": [\r\n        \"quis\",\r\n        \"amet\",\r\n        \"ea\",\r\n        \"enim\",\r\n        \"consequat\",\r\n        \"nostrud\",\r\n        \"enim\"\r\n    ],\r\n    \"friends\": [\r\n        {\r\n            \"id\": 0,\r\n            \"name\": \"Moore Lott\"\r\n        },\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Olive Simmons\"\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"name\": \"Murphy Bullock\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person-v1/_doc/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person-v1",
+								"_doc",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert person-v2 document bulk",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/x-ndjson",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"index\": {\"_id\": 1}}\r\n{\"id\":\"5fc7705cd6121f446c793576\",\"index\":0,\"guid\":\"a9002946-425b-404b-9a4a-661f083f65c2\",\"isActive\":false,\"balance\":\"$2,173.87\",\"picture\":\"http:\\/\\/placehold.it\\/32x32\",\"age\":28,\"eyeColor\":\"green\",\"name\":\"Lilian Roach\",\"gender\":\"female\",\"company\":\"HALAP\",\"email\":\"lilianroach@halap.com\",\"phone\":\"+1 (904) 472-2572\",\"address\":\"732 Battery Avenue, Abiquiu, Hawaii, 2025\",\"about\":\"Pariatur irure aute voluptate duis nulla amet ipsum ea. Est ullamco cillum minim sunt aliqua aute aute Lorem sint. Culpa esse ea proident aliqua. Id sit cillum amet sunt ad laborum pariatur consectetur sit ut nostrud aliqua nostrud. Eu adipisicing veniam enim minim laboris. Ut eu commodo nulla excepteur reprehenderit laborum eiusmod. Dolore velit consequat cupidatat ut eiusmod.\\r\\n\",\"registered\":\"2018-01-26\",\"location\":{\"lat\":71.815252,\"lon\":73.448804},\"tags\":[\"quis\",\"amet\",\"ea\",\"enim\",\"consequat\",\"nostrud\",\"enim\"],\"friends\":[{\"id\":0,\"name\":\"Moore Lott\"},{\"id\":1,\"name\":\"Olive Simmons\"},{\"id\":2,\"name\":\"Murphy Bullock\"}]}\r\n{\"index\": {\"_id\": 2}}\r\n{\"id\":\"5fc7705cce68230d5d417abc\",\"index\":1,\"guid\":\"a0ab2a74-b41e-4038-981e-12985aa60513\",\"isActive\":false,\"balance\":\"$2,616.19\",\"picture\":\"http:\\/\\/placehold.it\\/32x32\",\"age\":37,\"eyeColor\":\"green\",\"name\":\"Raquel Holland\",\"gender\":\"female\",\"company\":\"SNORUS\",\"email\":\"raquelholland@snorus.com\",\"phone\":\"+1 (814) 540-2220\",\"address\":\"124 Dahill Road, Tuskahoma, Federated States Of Micronesia, 3815\",\"about\":\"Consectetur pariatur commodo ex exercitation duis amet deserunt sint est ullamco eu officia veniam sunt. Pariatur laborum incididunt voluptate deserunt in. Culpa est eiusmod consequat exercitation do ex velit qui ut aute culpa elit officia anim.\\r\\n\",\"registered\":\"2016-02-10\",\"location\":{\"lat\":69.298395,\"lon\":136.770889},\"tags\":[\"commodo\",\"do\",\"exercitation\",\"consequat\",\"et\",\"mollit\",\"deserunt\"],\"friends\":[{\"id\":0,\"name\":\"Robyn Singleton\"},{\"id\":1,\"name\":\"Jodi Lambert\"},{\"id\":2,\"name\":\"Combs Mccarty\"}]}\r\n{\"index\": {\"_id\": 3}}\r\n{\"id\":\"5fc7705c0cd0f726b40fdb66\",\"index\":2,\"guid\":\"8c8200f2-ac01-4c73-8732-c4ae71ffa3ec\",\"isActive\":false,\"balance\":\"$3,713.58\",\"picture\":\"http:\\/\\/placehold.it\\/32x32\",\"age\":21,\"eyeColor\":\"green\",\"name\":\"Alyson Hodges\",\"gender\":\"female\",\"company\":\"PATHWAYS\",\"email\":\"alysonhodges@pathways.com\",\"phone\":\"+1 (844) 578-3296\",\"address\":\"246 Church Avenue, Homeland, North Carolina, 3325\",\"about\":\"Tempor magna amet ullamco nisi enim consequat in. Aliquip enim ut pariatur aliqua irure. Ullamco magna qui laborum dolore anim aute occaecat.\\r\\n\",\"registered\":\"2017-10-30\",\"location\":{\"lat\":48.8566,\"lon\":2.3522},\"tags\":[\"Lorem\",\"nisi\",\"Lorem\",\"aliquip\",\"et\",\"ut\",\"laboris\"],\"friends\":[{\"id\":0,\"name\":\"Noel Rodriquez\"},{\"id\":1,\"name\":\"Evangeline Brooks\"},{\"id\":2,\"name\":\"Tanisha Harrell\"}]}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person-v2/_bulk",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person-v2",
+								"_bulk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reindex documents person-v3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"source\": {\n        \"index\": \"person-v2\"\n    },\n    \"dest\": {\n        \"index\": \"person-v3\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/_reindex",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"_reindex"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List person-v1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": {\r\n        \"match_all\": {}\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person-v1/_search",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person-v1",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List person-v2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": {\r\n        \"match_all\": {}\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person-v2/_search",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person-v2",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List person-v3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": {\r\n        \"match_all\": {}\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person-v3/_search",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person-v3",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search person",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9200/person?name=Lilian Roach",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Lilian Roach"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Utils",
+			"item": [
+				{
+					"name": "Update cluster settings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transient\": {\r\n        \"cluster.routing.allocation.disk.watermark.low\": \"5gb\",\r\n        \"cluster.routing.allocation.disk.watermark.high\": \"5gb\",\r\n        \"cluster.routing.allocation.disk.watermark.flood_stage\": \"5gb\",\r\n        \"cluster.info.update.interval\": \"1m\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/_cluster/settings",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"_cluster",
+								"settings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Request ES",
+			"item": [
+				{
+					"name": "Get number of woman",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": {\r\n        \"match\": {\r\n            \"gender\": \"female\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person/_search",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search person above age 20",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": {\r\n        \"range\": {\r\n            \"age\": {\r\n                \"gte\": 20\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person/_search",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search man above age 20",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": {\r\n        \"bool\": {\r\n            \"filter\": [\r\n                {\r\n                    \"range\": {\r\n                        \"age\": {\r\n                            \"gte\": 20\r\n                        }\r\n                    }\r\n                },\r\n                {\r\n                    \"term\": {\r\n                        \"gender\": \"male\"\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person/_search",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get person above age 20 and balance between 1000/2000",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": {\r\n        \"bool\": {\r\n            \"filter\": [\r\n                {\r\n                    \"range\": {\r\n                        \"age\": {\r\n                            \"gte\": 20\r\n                        }\r\n                    }\r\n                },\r\n                {\r\n                    \"range\": {\r\n                        \"balance\": {\r\n                            \"gte\": 1000,\r\n                            \"lte\": 2000\r\n                        }\r\n                    }\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person/_search",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find person around Paris",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": {\r\n        \"bool\": {\r\n            \"must\": {\r\n                \"match_all\": {}\r\n            },\r\n            \"filter\": {\r\n                \"geo_distance\": {\r\n                    \"distance\": \"10km\",\r\n                    \"location\": {\r\n                        \"lat\": 48.8566,\r\n                        \"lon\": 2.3522\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person/_search",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calculate total person per genre",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aggs\": {\r\n        \"genres\": {\r\n            \"terms\": {\r\n                \"field\": \"gender\"\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person/_search",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calculate total person per genre and eyeColor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aggs\": {\r\n        \"genres\": {\r\n            \"terms\": {\r\n                \"field\": \"gender\"\r\n            },\r\n            \"aggs\": {\r\n                \"eyeColor\": {\r\n                    \"terms\": {\r\n                        \"field\": \"eyeColor\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person/_search",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calculate total person per genre and registeredYear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"aggs\": {\r\n        \"genres\": {\r\n            \"terms\": {\r\n                \"field\": \"gender\"\r\n            },\r\n            \"aggs\": {\r\n                \"registered\": {\r\n                    \"terms\": {\r\n                        \"field\": \"registered\",\r\n                        \"format\": \"yyyy\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9200/person/_search",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"person",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Request API",
+			"item": [
+				{
+					"name": "Get number of women",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/persons/_findTotalWoman",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"persons",
+								"_findTotalWoman"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search person above age 20",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/persons/_findPersonAboveAge20",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"persons",
+								"_findPersonAboveAge20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search man above age 20",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/persons/_findManAboveAge20",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"persons",
+								"_findManAboveAge20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get person above age 20 and balance between 1000/2000",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/persons/_findPersonAboveAge20AndBalance",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"persons",
+								"_findPersonAboveAge20AndBalance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find person around Paris",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/persons/_findPersonAroundParis",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"persons",
+								"_findPersonAroundParis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calculate average age",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/persons/_calculateAverageAge",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"persons",
+								"_calculateAverageAge"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calculate total person per genre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/persons/_calculateTotalPersonPerGenre",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"persons",
+								"_calculateTotalPersonPerGenre"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calculate total person per genre and eyeColor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/persons/_calculateTotalPersonPerGenreAndEyeColor",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"persons",
+								"_calculateTotalPersonPerGenreAndEyeColor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Calculate total person per genre and registeredYear",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/persons/_calculateTotalPersonPerGenreAndRegisteredYear",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"persons",
+								"_calculateTotalPersonPerGenreAndRegisteredYear"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9200/_cluster/health",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"_cluster",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

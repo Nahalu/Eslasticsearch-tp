@@ -18,4 +18,4 @@
 
 La collection et environnement Postman sont contenus dans ```/Postman```
 
-Les requêtes ES sont contenus dans le fichier persons.service.ts  
+Les requêtes ES sont contenus dans le fichier ```persons.service.ts``` ou dans le dossier Request ES du Postman.

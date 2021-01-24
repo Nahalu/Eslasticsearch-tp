@@ -1,0 +1,898 @@
+{
+	"id": "bc12644c-f4c3-436b-b6ee-e65245e8f3bd",
+	"name": "TP1 - TP2 - TP3 - Projet - NoSQL",
+	"timestamp": "2021-01-24T15:34:55.448Z",
+	"collection_id": "e522294d-6b35-4c4f-8087-6647ecb0a8c6",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "277461ad-1906-4bd6-9d4d-ab6698b60264",
+			"name": "Delete index person-v1",
+			"url": "http://localhost:9200/person-v1",
+			"time": 22,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				22
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c28739d6-6282-4b1b-ad4b-490e5f896cff",
+			"name": "Create index person-v1",
+			"url": "http://localhost:9200/person-v1",
+			"time": 96,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				96
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dedc3019-be22-434e-9a7f-b46054bb98cf",
+			"name": "Create schema index person-v1",
+			"url": "http://localhost:9200/person-v1/_mapping",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				25
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ba9f6923-ed77-4a4d-b919-4ca2b61126d2",
+			"name": "Delete index person-v2",
+			"url": "http://localhost:9200/person-v2",
+			"time": 29,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				29
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "afd95c33-df73-4513-b6a5-5aadaa722adf",
+			"name": "Create index person-v2",
+			"url": "http://localhost:9200/person-v2",
+			"time": 71,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				71
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9721df1d-1ea5-4a2a-8ab2-e80126bf86b2",
+			"name": "Create schema index person-v2",
+			"url": "http://localhost:9200/person-v2/_mapping",
+			"time": 24,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				24
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a187e240-28b6-4f7c-8d6c-f0a389e2098f",
+			"name": "Delete index person-v3",
+			"url": "http://localhost:9200/person-v3",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				35
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c7c7e2ba-3222-4de8-b9dd-25d01c270704",
+			"name": "Create index person-v3",
+			"url": "http://localhost:9200/person-v3",
+			"time": 69,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				69
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "948b5033-4ffa-4b72-b1b4-28102be326d4",
+			"name": "Create schema index person-v3",
+			"url": "http://localhost:9200/person-v3/_mapping",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b3553b92-819b-487e-86aa-41f2507eca24",
+			"name": "Create alias person",
+			"url": "http://localhost:9200/_aliases",
+			"time": 42,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				42
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9ffe65a0-a2f7-4d9c-a6a5-4bee54495508",
+			"name": "Create alias person",
+			"url": "http://localhost:9200/_aliases",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1698f046-ac6c-41b3-8367-031683f62abc",
+			"name": "Create alias person",
+			"url": "http://localhost:9200/_aliases",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a2db1507-b7fa-491e-a6c5-c0bcd87ae71e",
+			"name": "Create All alias person",
+			"url": "http://localhost:9200/_aliases",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "22fd7e2c-f7aa-48ec-b604-faa4ecd2d7ef",
+			"name": "List aliases",
+			"url": "http://localhost:9200/_alias",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "db10d733-f163-4de6-85c3-853303fad1dc",
+			"name": "Insert person-v1 document",
+			"url": "http://localhost:9200/person-v1/_doc/1",
+			"time": 6,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a0983d25-bf6b-4160-9e7d-7fb99abba180",
+			"name": "Insert person-v2 document bulk",
+			"url": "http://localhost:9200/person-v2/_bulk",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5c74336d-eb98-4ec5-a4f3-46589cfb720c",
+			"name": "Reindex documents person-v3",
+			"url": "http://localhost:9200/_reindex",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "84de589a-f886-4631-bfce-b950fe4d5760",
+			"name": "List person-v1",
+			"url": "http://localhost:9200/person-v1/_search",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7613634f-cf5e-485b-8a66-d8590e4e9c1c",
+			"name": "List person-v2",
+			"url": "http://localhost:9200/person-v2/_search",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "89286905-eeb7-4ecb-8d56-60e318358d7e",
+			"name": "List person-v3",
+			"url": "http://localhost:9200/person-v3/_search",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6d88156c-bae7-4468-b94d-fc0b1992d1b1",
+			"name": "Search person",
+			"url": "http://localhost:9200/person?name=Lilian%20Roach",
+			"time": 2,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "92d04494-89f5-43d8-9fa3-6f9ac3bfcda0",
+			"name": "Update cluster settings",
+			"url": "http://localhost:9200/_cluster/settings",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7158ad54-78c7-46fb-9e60-79b4d1c530a1",
+			"name": "Get number of woman",
+			"url": "http://localhost:9200/person/_search",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d4dea04e-338b-4f22-bebd-679172048444",
+			"name": "Search person above age 20",
+			"url": "http://localhost:9200/person/_search",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a8826491-0817-4807-99d3-7dacf674748e",
+			"name": "Search man above age 20",
+			"url": "http://localhost:9200/person/_search",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "624626c8-815e-4fe5-8dc9-90188caaa725",
+			"name": "Get person above age 20 and balance between 1000/2000",
+			"url": "http://localhost:9200/person/_search",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "84aefc9b-5b68-46d8-bd75-e1b0d69aa290",
+			"name": "Find person around Paris",
+			"url": "http://localhost:9200/person/_search",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4de7860b-e336-4044-b1df-b9a5733ce55c",
+			"name": "Calculate total person per genre",
+			"url": "http://localhost:9200/person/_search",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "40dbba72-a4cf-454b-9fda-dc5e2d8ff9fc",
+			"name": "Calculate total person per genre and eyeColor",
+			"url": "http://localhost:9200/person/_search",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8005cbf3-01a3-4b13-95ce-465f3d71f84f",
+			"name": "Calculate total person per genre and registeredYear",
+			"url": "http://localhost:9200/person/_search",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e108d931-d315-45b7-add8-88952cb10686",
+			"name": "Get number of women",
+			"url": "http://localhost:3000/persons/_findTotalWoman",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "816da345-5fe2-4d68-984a-f099b0fcbb5a",
+			"name": "Search person above age 20",
+			"url": "http://localhost:3000/persons/_findPersonAboveAge20",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1be7b46a-571c-40f3-888a-e70c276fc392",
+			"name": "Search man above age 20",
+			"url": "http://localhost:3000/persons/_findManAboveAge20",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e97a89ca-67dc-422d-bda0-57ef97184c6f",
+			"name": "Get person above age 20 and balance between 1000/2000",
+			"url": "http://localhost:3000/persons/_findPersonAboveAge20AndBalance",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "84776381-4b85-432a-b147-27b78ecea4f5",
+			"name": "Find person around Paris",
+			"url": "http://localhost:3000/persons/_findPersonAroundParis",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "52d6c8d0-0f89-461f-bb0d-52ed12cbb038",
+			"name": "Calculate average age",
+			"url": "http://localhost:3000/persons/_calculateAverageAge",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d96f8c8c-cfbd-4afa-9713-66bec6a6aa75",
+			"name": "Calculate total person per genre",
+			"url": "http://localhost:3000/persons/_calculateTotalPersonPerGenre",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7d1d69f0-09f6-44ec-81a7-b4e5b07f9835",
+			"name": "Calculate total person per genre and eyeColor",
+			"url": "http://localhost:3000/persons/_calculateTotalPersonPerGenreAndEyeColor",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7532de3c-91e9-40ab-99fe-5cb0db221199",
+			"name": "Calculate total person per genre and registeredYear",
+			"url": "http://localhost:3000/persons/_calculateTotalPersonPerGenreAndRegisteredYear",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c9120f2d-fd41-49f2-9c6b-e3068fae1b6b",
+			"name": "Healthcheck",
+			"url": "http://localhost:9200/_cluster/health",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 560,
+	"collection": {
+		"requests": [
+			{
+				"id": "277461ad-1906-4bd6-9d4d-ab6698b60264",
+				"method": "DELETE"
+			},
+			{
+				"id": "c28739d6-6282-4b1b-ad4b-490e5f896cff",
+				"method": "PUT"
+			},
+			{
+				"id": "dedc3019-be22-434e-9a7f-b46054bb98cf",
+				"method": "PUT"
+			},
+			{
+				"id": "ba9f6923-ed77-4a4d-b919-4ca2b61126d2",
+				"method": "DELETE"
+			},
+			{
+				"id": "afd95c33-df73-4513-b6a5-5aadaa722adf",
+				"method": "PUT"
+			},
+			{
+				"id": "9721df1d-1ea5-4a2a-8ab2-e80126bf86b2",
+				"method": "PUT"
+			},
+			{
+				"id": "a187e240-28b6-4f7c-8d6c-f0a389e2098f",
+				"method": "DELETE"
+			},
+			{
+				"id": "c7c7e2ba-3222-4de8-b9dd-25d01c270704",
+				"method": "PUT"
+			},
+			{
+				"id": "948b5033-4ffa-4b72-b1b4-28102be326d4",
+				"method": "PUT"
+			},
+			{
+				"id": "b3553b92-819b-487e-86aa-41f2507eca24",
+				"method": "POST"
+			},
+			{
+				"id": "9ffe65a0-a2f7-4d9c-a6a5-4bee54495508",
+				"method": "POST"
+			},
+			{
+				"id": "1698f046-ac6c-41b3-8367-031683f62abc",
+				"method": "POST"
+			},
+			{
+				"id": "a2db1507-b7fa-491e-a6c5-c0bcd87ae71e",
+				"method": "POST"
+			},
+			{
+				"id": "22fd7e2c-f7aa-48ec-b604-faa4ecd2d7ef",
+				"method": "GET"
+			},
+			{
+				"id": "db10d733-f163-4de6-85c3-853303fad1dc",
+				"method": "POST"
+			},
+			{
+				"id": "a0983d25-bf6b-4160-9e7d-7fb99abba180",
+				"method": "POST"
+			},
+			{
+				"id": "5c74336d-eb98-4ec5-a4f3-46589cfb720c",
+				"method": "POST"
+			},
+			{
+				"id": "84de589a-f886-4631-bfce-b950fe4d5760",
+				"method": "POST"
+			},
+			{
+				"id": "7613634f-cf5e-485b-8a66-d8590e4e9c1c",
+				"method": "POST"
+			},
+			{
+				"id": "89286905-eeb7-4ecb-8d56-60e318358d7e",
+				"method": "POST"
+			},
+			{
+				"id": "6d88156c-bae7-4468-b94d-fc0b1992d1b1",
+				"method": "GET"
+			},
+			{
+				"id": "92d04494-89f5-43d8-9fa3-6f9ac3bfcda0",
+				"method": "PUT"
+			},
+			{
+				"id": "7158ad54-78c7-46fb-9e60-79b4d1c530a1",
+				"method": "POST"
+			},
+			{
+				"id": "d4dea04e-338b-4f22-bebd-679172048444",
+				"method": "POST"
+			},
+			{
+				"id": "a8826491-0817-4807-99d3-7dacf674748e",
+				"method": "POST"
+			},
+			{
+				"id": "624626c8-815e-4fe5-8dc9-90188caaa725",
+				"method": "POST"
+			},
+			{
+				"id": "84aefc9b-5b68-46d8-bd75-e1b0d69aa290",
+				"method": "POST"
+			},
+			{
+				"id": "4de7860b-e336-4044-b1df-b9a5733ce55c",
+				"method": "POST"
+			},
+			{
+				"id": "40dbba72-a4cf-454b-9fda-dc5e2d8ff9fc",
+				"method": "POST"
+			},
+			{
+				"id": "8005cbf3-01a3-4b13-95ce-465f3d71f84f",
+				"method": "POST"
+			},
+			{
+				"id": "e108d931-d315-45b7-add8-88952cb10686",
+				"method": "GET"
+			},
+			{
+				"id": "816da345-5fe2-4d68-984a-f099b0fcbb5a",
+				"method": "GET"
+			},
+			{
+				"id": "1be7b46a-571c-40f3-888a-e70c276fc392",
+				"method": "GET"
+			},
+			{
+				"id": "e97a89ca-67dc-422d-bda0-57ef97184c6f",
+				"method": "GET"
+			},
+			{
+				"id": "84776381-4b85-432a-b147-27b78ecea4f5",
+				"method": "GET"
+			},
+			{
+				"id": "52d6c8d0-0f89-461f-bb0d-52ed12cbb038",
+				"method": "GET"
+			},
+			{
+				"id": "d96f8c8c-cfbd-4afa-9713-66bec6a6aa75",
+				"method": "GET"
+			},
+			{
+				"id": "7d1d69f0-09f6-44ec-81a7-b4e5b07f9835",
+				"method": "GET"
+			},
+			{
+				"id": "7532de3c-91e9-40ab-99fe-5cb0db221199",
+				"method": "GET"
+			},
+			{
+				"id": "c9120f2d-fd41-49f2-9c6b-e3068fae1b6b",
+				"method": "GET"
+			}
+		]
+	}
+}
